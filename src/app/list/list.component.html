@@ -1,0 +1,10 @@
+<h1>Products List</h1>
+
+<div *ngFor = "let product of products">
+  <img src='{{ product.imgurl }}' alt = 'no image url was submited'>
+  <br>
+  <h3>{{ product.title }}</h3>
+  <h3>{{ product.price }}</h3>
+  <button (click) = "edit(product.id)">Edit</button>
+  <button (click) = "delete(product.id)">Delete</button>
+</div>
